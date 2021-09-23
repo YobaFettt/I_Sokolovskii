@@ -1,0 +1,75 @@
+Summary;Issue key;Issue id;Issue Type;Status;Project key;Project name;Project type;Project lead;Project description;Project url;Priority;Resolution;Assignee;Reporter;Creator;Created;Updated;Last Viewed;Resolved;Component/s;Due Date;Votes;Description;Environment;Watchers;Original Estimate;Remaining Estimate;Time Spent;Work Ratio;Σ Original Estimate;Σ Remaining Estimate;Σ Time Spent;Security Level;Custom field (Epic Color);Custom field (Epic Link);Custom field (Epic Name);Custom field (Epic Status);Custom field (Original story points);Custom field (Parent Link);Custom field (Rank);Custom field (Story Points);Custom field (Target end);Custom field (Target start);Custom field (Team)
+Приостановка копирования большого количества файлов разного размера;HL-31;10030;Bug;To Do;HL;hardload;software;admin;;;Medium;;sokolovskii-i@mail.ru;sokolovskii-i@mail.ru;sokolovskii-i@mail.ru;03/Sep/21 4:42 PM;03/Sep/21 4:44 PM;10/Sep/21 2:27 PM;;Perf;;0;"|1|Выбрать и копировать файлы
+Expected Result|*Начат процесс копирования*|
+|2|Нажать кнопку ""Остановить грузить
+Expected Result|*Процесс приостановлен*|
+| |Actual Result|_Интерфейс программы зависает, невозможно приостановить копирование_|";;sokolovskii-i@mail.ru;;;;;;;;;;;;;;;"0|i0006c:";;;;
+Удаление нескольких файлов из списка;HL-29;10028;Bug;To Do;HL;hardload;software;admin;;;Medium;;sokolovskii-i@mail.ru;sokolovskii-i@mail.ru;sokolovskii-i@mail.ru;03/Sep/21 4:39 PM;03/Sep/21 4:44 PM;03/Sep/21 4:44 PM;;Func;;0;"|1|Выделить файлы в списке
+Expected Result|*Файлы выбраны*|
+|2|Нажать на кнопку ""Удалить выделенные файлы из списка""
+Expected Result
+ 
+ 
+|*Все файлы удалены*|
+| |Actual Result|_При наличии в списке 2-х и более файлов, программа удаляет только один. При наличии 3-х и более - только два, остальные оставляет_|";;sokolovskii-i@mail.ru;;;;;;;;;;;;;;;"0|i0005w:";;;;
+Возмонжость проставить чекбоксы на весь список файл;HL-27;10026;Task;To Do;HL;hardload;software;admin;;;Medium;;sokolovskii-i@mail.ru;sokolovskii-i@mail.ru;sokolovskii-i@mail.ru;03/Sep/21 4:36 PM;03/Sep/21 4:43 PM;03/Sep/21 4:43 PM;;UI;;0;Нет возможности проставить чекбоксы разом на весь список файлов;;sokolovskii-i@mail.ru;;;;;;;;;;;;;;;"0|i0005g:";;;;
+ Правильность локализации программы ;HL-25;10024;Bug;To Do;HL;hardload;software;admin;;;Medium;;sokolovskii-i@mail.ru;sokolovskii-i@mail.ru;sokolovskii-i@mail.ru;03/Sep/21 4:33 PM;03/Sep/21 4:42 PM;03/Sep/21 4:42 PM;;UI;;0;"|1|Проверить все надписи в главном окне программы
+Expected Result
+ |
+| |Actual Result
+[!http://89.223.126.182/testrail/index.php?/attachments/get/58|width=295,height=144!|http://89.223.126.182/testrail/index.php?/attachments/get/58]|
+Не весь текст на русском. Не переведено Files в шапке списка, To перед строкой пути к папке, в которую будет выполнятся копирование
+  |
+|2|Проверить все подсказки при наведении на кнопки
+Expected Result
+Подсказки на русском языке
+Actual Result
+Надписи на русском, но некорректный перевод (начать грузить, остановить грузить)[!http://89.223.126.182/testrail/index.php?/attachments/get/59!|http://89.223.126.182/testrail/index.php?/attachments/get/59]| |
+| | |
+| | |
+|3|Нажать на кнопку выбора файлов
+Expected Result
+Открылось окно выбора файлов| |
+|4|В окне выбора файлов просмотреть локализацию текста
+Expected Result
+Весь текст на русском языке
+Actual Result
+[!http://89.223.126.182/testrail/index.php?/attachments/get/60!|http://89.223.126.182/testrail/index.php?/attachments/get/60]
+Непереведенные надписи показаны на рисунке| |
+|5|Нажать кнопку выбора папки назначения копирования
+Expected Result
+Открыто окно выбора папки| |
+|6|В окне выбора папки просмотреть локализацию текста
+Expected Result
+Весь текст на русском языке
+Actual Result
+Текст на русском, некорр[!http://89.223.126.182/testrail/index.php?/attachments/get/61!|http://89.223.126.182/testrail/index.php?/attachments/get/61]
+ектный перевод| |";;sokolovskii-i@mail.ru;;;;;;;;;;;;;;;"0|i00050:";;;;
+Выделение файлов посредством мыши;HL-30;10029;Bug;To Do;HL;hardload;software;admin;;;Medium;;sokolovskii-i@mail.ru;sokolovskii-i@mail.ru;sokolovskii-i@mail.ru;03/Sep/21 4:40 PM;03/Sep/21 4:40 PM;03/Sep/21 4:40 PM;;Func;;0;"|1|В списке файлов мышью выделить файлы
+Expected Result
+ 
+|*Файлы выделены*|
+| |Actual Result|_При попытке выделить файлы мышью, курсор перемещается в правый нижний угол экрана_|";;sokolovskii-i@mail.ru;;;;;;;;;;;;;;;"0|i00064:";;;;
+Добавление нескольких файлов за один раз;HL-28;10027;Bug;To Do;HL;hardload;software;admin;;;Medium;;sokolovskii-i@mail.ru;sokolovskii-i@mail.ru;sokolovskii-i@mail.ru;03/Sep/21 4:38 PM;03/Sep/21 4:38 PM;03/Sep/21 4:38 PM;;;;0;"|1|Нажать на кнопку ""Выбор файла""
+Expected Result|Окно выбора файла|
+|2|Выделяем несколько файлов в папке ""From""
+Expected Result|*В список файлов добавлено несколько файлов*|
+| |Actual Result|_Можно добавлять только по одному файлу за раз_|";;sokolovskii-i@mail.ru;;;;;;;;;;;;;;;"0|i0005o:";;;;
+Изменение размера окна программы;HL-26;10025;Task;To Do;HL;hardload;software;admin;;;Medium;;sokolovskii-i@mail.ru;sokolovskii-i@mail.ru;sokolovskii-i@mail.ru;03/Sep/21 4:33 PM;03/Sep/21 4:33 PM;03/Sep/21 4:33 PM;;UI;;0;Нет возможности изменить размер окна;;sokolovskii-i@mail.ru;;;;;;;;;;;;;;;"0|i00058:";;;;
+Появление всплывающих подсказок при наведении курсора мыши на кнопки;HL-24;10023;Bug;To Do;HL;hardload;software;admin;;;Medium;;sokolovskii-i@mail.ru;sokolovskii-i@mail.ru;sokolovskii-i@mail.ru;03/Sep/21 4:27 PM;03/Sep/21 4:27 PM;03/Sep/21 4:27 PM;;UI;;0;"|1|Навести курсор мыши на активную кнопку
+Expected Result|*Появилась всплывающая подсказка*|
+| |Actual Result|_Подсказка не появляется_|
+|2|Навести курсор мыши на не активную кнопку
+Expected Result|*Появилась всплывающая подсказка*|
+| |Actual Result|_Подсказка не появляется_|";;sokolovskii-i@mail.ru;;;;;;;;;;;;;;;"0|i0004s:";;;;
+hardload.exe Горизонтальный скроллбар;HL-23;10022;Bug;To Do;HL;hardload;software;admin;;;Medium;;sokolovskii-i@mail.ru;sokolovskii-i@mail.ru;sokolovskii-i@mail.ru;03/Sep/21 4:20 PM;03/Sep/21 4:23 PM;03/Sep/21 4:23 PM;;UI;;0;"Проверить отсутствие скролл бара при пустом списке файлов для копирования
+
+ 
+| |Expected Result|*Скролл бар отсутсвует*|
+| |Actual Result|_Скролл бар присутствует_|";;sokolovskii-i@mail.ru;;;;;;;;;;;;;;;"0|i0004k:";;;;
+Кнопки разного размера;HL-3;10002;Bug;To Do;HL;hardload;software;admin;;;Medium;;sokolovskii-i@mail.ru;sokolovskii-i@mail.ru;sokolovskii-i@mail.ru;28/Aug/21 11:52 AM;28/Aug/21 3:26 PM;28/Aug/21 11:52 AM;;UI;;0;"|1|Измерить размер кнопки ""выбор файлов""
+Expected Result|*{color:#57d9a3}36x29 пикс{color}*|
+|2|Сравнить размеры остальных кнопок с первой
+Expected Result
+Размеры кнопок совпадают
+Actual Result|{color:#de350b}*Не совпадают*{color}|";;sokolovskii-i@mail.ru;;;;;;;;;;;;;;;"0|i00005:";;;;
